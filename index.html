@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Кубок сети АЗС «Бекойл»: итоги гонки">
+<meta property="og:description" content="Гонка эндуро в Янди, 17 октября 2026. Места в трёх классах, время каждого гонщика.">
+<meta property="og:image" content="https://xasi88.github.io/bekoil/img/afisha.jpg">
+<meta property="og:url" content="https://xasi88.github.io/bekoil/">
+<meta property="og:type" content="website">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Кубок Бекойл</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Итоги гонки эндуро «Кубок сети АЗС Бекойл» в Янди, 17 октября 2026 года">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Протокол финиша: стартовые номера, чистое время, места по классам. Горизонтали гор в шапке. */
+:root{
+  --bg:#EEF0EA; --panel:#FFFFFF; --ink:#151A16; --muted:#57605A; --line:#D2D8CF; --contour:rgba(21,26,22,.075);
+  --fire:#CF3D18; --fire-ink:#FFFFFF; --warn-bg:#FFF0C2; --warn-ink:#644800;
+  --gold:#9A6F00; --silver:#5F6A74; --bronze:#94511F;
+  --plate-gold:#F2C230; --plate-silver:#E4E9ED; --plate-bronze:#E39A63; --plate-ink:#121212; --step:#1A201C;
+  --f-display:"Dela Gothic One","Arial Black",Impact,sans-serif;
+  --f-body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-data:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1310; --panel:#171D19; --ink:#E9EEE8; --muted:#9DA89F; --line:#2A322C; --contour:rgba(233,238,232,.06);
+  --fire:#FF6B3F; --fire-ink:#170A05; --warn-bg:#3B2F0E; --warn-ink:#F5D47C;
+  --gold:#E9BE48; --silver:#BEC8D0; --bronze:#DE9764; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1310; --panel:#171D19; --ink:#E9EEE8; --muted:#9DA89F; --line:#2A322C; --contour:rgba(233,238,232,.06);
+  --fire:#FF6B3F; --fire-ink:#170A05; --warn-bg:#3B2F0E; --warn-ink:#F5D47C;
+  --gold:#E9BE48; --silver:#BEC8D0; --bronze:#DE9764; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{text-wrap:balance}
+h2{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,5.2vw,46px);line-height:1.05;margin:0}
+h3{font-size:18px;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--fire);outline-offset:3px}
+.muted{color:var(--muted)}
+
+/* Шапка */
+.hero{background-color:var(--bg);background-image:repeating-radial-gradient(ellipse 120% 90% at 92% 8%, transparent 0 30px, var(--contour) 30px 31.5px);padding-block:28px 48px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:48px;align-items:center}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(46px,10.5vw,104px);line-height:.95;margin:16px 0 0;letter-spacing:-.005em}
+h1 .pre{display:block;font-family:var(--f-body);font-weight:700;font-size:clamp(15px,2.2vw,19px);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+h1 .q{color:var(--fire)}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:16px;font-family:var(--f-display);font-size:clamp(20px,3.4vw,30px);line-height:1.1}
+.lede{max-width:34em;margin-top:18px;font-size:17px}
+.facts{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:14px 36px;margin:28px 0 0;padding:0}
+.facts div{display:flex;flex-direction:column-reverse}
+.facts dd{margin:0;font-family:var(--f-display);font-size:clamp(30px,6vw,42px);line-height:1;font-variant-numeric:tabular-nums}
+.facts dt{margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-fire{background:var(--fire);color:var(--fire-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.hero-photo{margin:0;position:relative}
+.hero-photo img{display:block;width:100%;max-width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 22%;border-radius:18px}
+.hero-photo figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+
+/* Номерная табличка: цвет по классу, как на эндуро-мотоцикле */
+.plate{display:inline-grid;place-items:center;min-width:2.6em;height:1.95em;padding:0 .45em;background:var(--pc,var(--plate-gold));color:var(--plate-ink);border-radius:.35em .35em .85em .85em;font-family:var(--f-display);font-size:15px;line-height:1;box-shadow:inset 0 0 0 2px rgba(0,0,0,.2);flex:none}
+.p-gold{--pc:var(--plate-gold)} .p-silver{--pc:var(--plate-silver)} .p-bronze{--pc:var(--plate-bronze)}
+.sub .plate{font-size:clamp(16px,2.6vw,22px)}
+
+/* Разделы */
+.band{padding-block:56px}
+.band-alt{background:var(--panel);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.chip-warn{display:inline-block;background:var(--warn-bg);color:var(--warn-ink);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+.note{max-width:44em;margin-top:14px;color:var(--muted)}
+
+/* Классы */
+.classes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:760px;margin-top:28px}
+.cls{appearance:none;font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-height:64px;padding:10px 12px;border-radius:14px;border:2px solid var(--line);background:var(--panel);color:var(--ink);min-width:0}
+.cls-name{font-family:var(--f-display);font-size:clamp(16px,3.4vw,20px);line-height:1.1}
+.cls-count{font-size:13px;color:var(--muted);line-height:1.3}
+.cls[aria-selected="true"]{background:var(--pc);border-color:var(--pc);color:var(--plate-ink)}
+.cls[aria-selected="true"] .cls-count{color:var(--plate-ink)}
+
+/* Поиск */
+.search{position:relative;max-width:760px;margin-top:20px}
+.search label{display:block;font-weight:700;margin-bottom:6px}
+.search-box{position:relative}
+.search svg{position:absolute;left:14px;top:50%;width:20px;height:20px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search input{width:100%;height:54px;padding:0 14px 0 44px;border-radius:14px;border:2px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;font-size:17px}
+.search input:focus{border-color:var(--fire);outline:none}
+.found-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin:24px 0 8px;max-width:760px}
+.link-btn{appearance:none;background:none;border:0;padding:8px 0;font:inherit;font-weight:700;color:var(--fire);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* Пьедестал */
+.podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:end;max-width:760px;margin-top:32px}
+.pod{display:flex;flex-direction:column;gap:10px;min-width:0}
+.pod-1{order:2}.pod-2{order:1}.pod-3{order:3}
+.pod-who{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;min-width:0}
+.pod-who b{font-size:15px;line-height:1.25;font-weight:700;overflow-wrap:anywhere}
+.pod-who small{font-size:13px;color:var(--muted);line-height:1.3}
+.pod-time{font-family:var(--f-data);font-weight:700;font-size:15px;font-variant-numeric:tabular-nums}
+.pod-step{display:grid;place-items:center;background:var(--step);border:1px solid var(--line);border-bottom:0;border-radius:12px 12px 0 0;font-family:var(--f-display);font-size:clamp(30px,6vw,44px);line-height:1;transform-origin:bottom;animation:rise .55s cubic-bezier(.2,.8,.2,1) both}
+.pod-1 .pod-step{height:124px;color:var(--plate-gold)}
+.pod-2 .pod-step{height:92px;color:var(--plate-silver);animation-delay:.08s}
+.pod-3 .pod-step{height:70px;color:var(--plate-bronze);animation-delay:.16s}
+@keyframes rise{from{transform:scaleY(.55)}to{transform:none}}
+.podium-base{max-width:760px;height:6px;background:var(--step);border-radius:0 0 4px 4px}
+
+/* Протокол */
+.proto-title{margin-top:40px;font-size:20px}
+.proto{list-style:none;margin:12px 0 0;padding:0;border-top:2px solid var(--ink);max-width:860px}
+.row{display:grid;grid-template-columns:2.2em auto minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:12px 2px;border-bottom:1px solid var(--line)}
+.r-place{font-family:var(--f-display);font-size:20px;line-height:1;text-align:center;font-variant-numeric:tabular-nums}
+.r-place.m1{color:var(--gold)} .r-place.m2{color:var(--silver)} .r-place.m3{color:var(--bronze)}
+.r-who{min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
+.r-who b{font-weight:600;font-size:16px;line-height:1.3}
+.r-from{font-size:14px;color:var(--muted)}
+.r-clock{grid-column:3/-1;font-family:var(--f-data);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:12px;font-weight:600;line-height:1.2;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tag-warn{background:var(--warn-bg);color:var(--warn-ink);border-color:transparent}
+.r-time{text-align:right;font-family:var(--f-data);font-variant-numeric:tabular-nums;white-space:nowrap}
+.r-time b{display:block;font-size:17px;font-weight:700}
+.r-gap{font-size:12px;color:var(--muted)}
+.r-status{font-family:var(--f-body);font-size:13px;font-weight:700;color:var(--muted)}
+
+.others{display:grid;gap:10px;max-width:860px;margin-top:28px}
+.grp{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:0 14px}
+.grp summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;cursor:pointer;font-weight:700;list-style:none}
+.grp summary::-webkit-details-marker{display:none}
+.grp summary::after{content:"+";font-family:var(--f-data);font-size:20px;color:var(--muted)}
+.grp[open] summary::after{content:"\2212"}
+.grp-n{margin-left:auto;font-family:var(--f-data);color:var(--muted)}
+.grp-note{color:var(--muted);font-size:14px;margin-bottom:4px}
+.grp .proto{border-top:1px solid var(--line);margin-bottom:8px}
+.grp .row:last-child{border-bottom:0}
+
+/* Откуда */
+.geo-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;margin-top:28px}
+.geo{display:grid;gap:9px}
+.geo-row{display:grid;grid-template-columns:minmax(0,8.5em) minmax(0,1fr) 2ch;gap:12px;align-items:center;font-size:15px}
+.geo-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.geo-track{height:14px;background:var(--bg);border-radius:7px;overflow:hidden}
+.geo-bar{display:block;height:100%;background:var(--fire);border-radius:7px}
+.geo-n{font-family:var(--f-data);font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-size:13px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chip b{color:var(--ink);font-family:var(--f-data)}
+.teams{display:grid;gap:12px;margin-top:12px}
+.team{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--bg)}
+.team ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+.team li{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:10px}
+.tm{display:flex;flex-direction:column;line-height:1.3}
+.team small{color:var(--muted);font-size:13px}
+
+/* Трасса */
+.track{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:40px;align-items:start;margin-top:28px}
+.track img{display:block;width:100%;max-width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px}
+.track figure{margin:0}
+.track figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+.feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px}
+.feat h3{font-family:var(--f-display);font-weight:400;font-size:20px;line-height:1.15}
+.feat p{margin-top:6px;color:var(--muted)}
+.org{margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
+.org ul{margin:10px 0 0;padding-left:1.1em;display:grid;gap:6px}
+
+/* Спасибо */
+.thanks{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:28px}
+.th{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--panel);display:flex;flex-direction:column;gap:8px;min-width:0}
+.th-main{flex-direction:row;gap:18px;align-items:flex-start}
+.th-main img{width:92px;height:auto;border-radius:12px;flex:none}
+.th-role{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.th-name{font-family:var(--f-display);font-size:24px;line-height:1.1}
+.call{margin-top:28px;font-size:clamp(18px,2.6vw,22px);font-weight:600;max-width:36em}
+.afisha{margin:36px 0 0;max-width:760px}
+.afisha img{display:block;width:100%;max-width:100%;height:auto;border-radius:16px}
+.afisha figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+
+footer{padding-block:32px 40px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{display:grid;gap:8px}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .hero-photo{max-width:420px}
+  .hero-photo img{aspect-ratio:1;object-position:50% 20%}
+  .geo-grid,.track,.thanks{grid-template-columns:1fr;gap:28px}
+  .track figure{max-width:420px}
+}
+@media (max-width:520px){
+  .band{padding-block:44px}
+  .feat{grid-template-columns:1fr}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .row{gap:4px 10px}
+  .r-time b{font-size:16px}
+  .pod-who b{font-size:14px}
+  .pod-time{font-size:13px}
+  .geo-row{grid-template-columns:minmax(0,7.5em) minmax(0,1fr) 2ch}
+}
+@media (prefers-reduced-motion: reduce){.pod-step{animation:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Эндуро · с. Янди, Ачхой-Мартановский район · 17 октября 2026</p>
+      <h1><span class="pre">Кубок сети АЗС</span><span class="q">«</span>Бекойл<span class="q">»</span></h1>
+      <p class="sub">Гонка в Янди <span class="plate p-gold">1.0</span></p>
+      <p class="lede">Лес, река, камни и крутые подъёмы. Здесь итоги по таблице организатора: время каждого гонщика и места в трёх классах.</p>
+      <dl class="facts">
+        <div><dt>в списках</dt><dd id="f-total"></dd></div>
+        <div><dt>на финише</dt><dd id="f-fin"></dd></div>
+        <div><dt>класса</dt><dd id="f-cls"></dd></div>
+        <div><dt>сёл и городов</dt><dd id="f-places"></dd></div>
+      </dl>
+      <div class="cta">
+        <a class="btn btn-fire" href="#itogi">Смотреть итоги</a>
+        <a class="btn btn-ghost" href="#poisk">Найти себя</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/gonka.jpg" alt="Гонщик заезжает на препятствие из деревянных поддонов" width="480" height="848">
+      <figcaption>Препятствие из поддонов. Кадр из видео с гонки.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+  <section class="band" id="itogi">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Итоги</h2>
+        <span class="chip-warn">Предварительно</span>
+      </div>
+      <p class="note">Место считаем по чистому времени: финиш минус старт. <span id="pen-note"></span> Окончательные места утверждает организатор.</p>
+
+      <div class="search" id="poisk">
+        <label for="q">Найти гонщика</label>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+          <input id="q" type="search" placeholder="Фамилия, село или номер" autocomplete="off" enterkeyhint="search">
+        </div>
+      </div>
+
+      <div class="classes" id="classes" role="tablist" aria-label="Класс"></div>
+
+      <div id="view" role="tabpanel">
+        <div class="podium" id="podium" aria-label="Три лучших времени"></div>
+        <div class="podium-base"></div>
+        <h3 class="proto-title" id="proto-title">Протокол</h3>
+        <ol class="proto" id="proto"></ol>
+        <div class="others" id="others"></div>
+      </div>
+
+      <div id="found" hidden>
+        <div class="found-head">
+          <p id="found-n" aria-live="polite"></p>
+          <button type="button" class="link-btn" id="found-reset">Сбросить поиск</button>
+        </div>
+        <ol class="proto" id="found-list"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-alt" id="otkuda">
+    <div class="wrap">
+      <h2>Откуда гонщики</h2>
+      <div class="geo-grid">
+        <div>
+          <p class="muted" id="geo-lede"></p>
+          <div class="geo" id="geo-bars" style="margin-top:16px"></div>
+          <div class="chips" id="geo-rest"></div>
+        </div>
+        <div>
+          <h3>Команды в таблице</h3>
+          <div class="teams" id="teams"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="trassa">
+    <div class="wrap">
+      <h2>Трасса</h2>
+      <div class="track">
+        <figure>
+          <img src="img/les.jpg" alt="Гонщики проходят лесной участок трассы" width="480" height="480" loading="lazy">
+          <figcaption>Лесной участок. Кадр из видео с гонки.</figcaption>
+        </figure>
+        <div>
+          <div class="feat">
+            <div><h3>Подъёмы и спуски</h3><p>Крутые подъёмы и затяжные спуски.</p></div>
+            <div><h3>Камни</h3><p>Камни и препятствия на пути.</p></div>
+            <div><h3>Река</h3><p>Путь по реке по камням, вверх и вниз.</p></div>
+            <div><h3>Траверсы и прыжки</h3><p>Проезд по склону и прыжки.</p></div>
+          </div>
+          <div class="org">
+            <h3>Для гонщиков и гостей</h3>
+            <ul>
+              <li>Подъезд расчистили, сделали парковку.</li>
+              <li>Для всех варили мясо в котле.</li>
+              <li>Дрон снимал каждый старт.</li>
+              <li>Фотограф снимал всю площадку.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-alt" id="spasibo">
+    <div class="wrap">
+      <h2>Спасибо</h2>
+      <div class="thanks">
+        <article class="th th-main">
+          <img src="img/bekoil.jpg" alt="Логотип сети АЗС Бекойл" width="320" height="352" loading="lazy">
+          <div style="display:grid;gap:8px">
+            <p class="th-role">Генеральный спонсор</p>
+            <p class="th-name">Бекхан Газаматов</p>
+            <p>Кубок сети АЗС «Бекойл». Баркалла за гонку!</p>
+          </div>
+        </article>
+        <article class="th">
+          <p class="th-role">Организатор</p>
+          <p class="th-name">Ала Хасиев</p>
+          <p>Спасибо ему и всем, кто помогал. Провести такую гонку непросто.</p>
+        </article>
+        <article class="th">
+          <p class="th-role">Партнёры на афише</p>
+          <p>Enduro Chechnya</p>
+          <p>Министерство Чеченской Республики по физической культуре и спорту</p>
+        </article>
+      </div>
+      <p class="call">Любишь мотоцикл? Приходи на трассу, на следующую гонку. Там твоё умение увидят и оценят.</p>
+      <figure class="afisha">
+        <img src="img/afisha.jpg" alt="Афиша гонки: Кубок сети АЗС Бекойл, гонка в Янди 1.0, 17 октября 2026 года" width="960" height="680" loading="lazy">
+        <figcaption>Афиша гонки</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Данные: таблица организатора на <span id="upd"></span>. Нашли ошибку в имени или времени? Скажите организатору гонки.</p>
+    <p>Страницу сделал Хаси Абдуллах. Другие работы: <a href="https://xasi88.github.io/">xasi88.github.io</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const DATA = /*ДАННЫЕ*/{"updated":"2026-10-20","classes":[{"id":"gold","name":"Золото","riders":[{"name":"Мадаев Рамзан","from":"с. Илсхан Юрт","village":"Илсхан-Юрт","team":null,"tag":null,"n":1,"start":32820,"finish":45808,"pen":null,"status":"fin"},{"name":"Мукаев Иса","from":"с. Б1ачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":4,"start":33360,"finish":45740,"pen":null,"status":"fin"},{"name":"Музаев Сайфуллах1","from":null,"village":null,"team":"FX MOTO","tag":null,"n":11,"start":34200,"finish":44331,"pen":null,"status":"fin"},{"name":"Осмаев Хункар-Паша","from":"с. Б1ачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":10,"start":34080,"finish":43782,"pen":null,"status":"fin"},{"name":"Чалаев Усман","from":"с. Беной","village":"Беной","team":null,"tag":null,"n":8,"start":33840,"finish":43294,"pen":null,"status":"fin"},{"name":"Амалаев Адам","from":"г. Гудермес","village":"Гудермес","team":"GODJI","tag":null,"n":2,"start":33000,"finish":42369,"pen":null,"status":"fin"},{"name":"Тахаев Ибраим","from":"с. Бердыкель","village":"Бердыкель","team":null,"tag":null,"n":3,"start":33180,"finish":42125,"pen":null,"status":"fin"},{"name":"Лабазанов Гаджимурад","from":"г. Хасавюрт","village":"Хасавюрт","team":"FX MOTO","tag":null,"n":7,"start":33720,"finish":41657,"pen":null,"status":"fin"},{"name":"Масхадов Муму Сайд-Эмин","from":"с. Аллерой","village":"Аллерой","team":null,"tag":null,"n":9,"start":33960,"finish":41444,"pen":null,"status":"fin"},{"name":"Ханукаев Ахьмад","from":"с. Сержень-Юрт","village":"Сержень-Юрт","team":null,"tag":null,"n":5,"start":33480,"finish":40468,"pen":null,"status":"fin"},{"name":"Мирзаев Магомед","from":"ст. Ищерская","village":"Ищерская","team":null,"tag":null,"n":6,"start":33600,"finish":null,"pen":null,"status":"nofin"},{"name":null,"from":null,"village":null,"team":null,"tag":null,"n":13,"start":34320,"finish":null,"pen":null,"status":"nofin"}]},{"id":"silver","name":"Серебро","riders":[{"name":"Мудаев Ильяс","from":"с. Кади-Юрт","village":"Кади-Юрт","team":null,"tag":null,"n":19,"start":34080,"finish":null,"pen":null,"status":"dnf"},{"name":"Алиев Зумрат","from":"с. Химой","village":"Химой","team":null,"tag":null,"n":39,"start":35280,"finish":null,"pen":null,"status":"dnf"},{"name":"Тавлуев Булат","from":"г. Грозный","village":"Грозный","team":null,"tag":null,"n":26,"start":34440,"finish":54635,"pen":null,"status":"fin"},{"name":"Рассаев Чингисхан","from":"с. Автуры","village":"Автуры","team":null,"tag":null,"n":40,"start":35280,"finish":55365,"pen":null,"status":"fin"},{"name":"Татаев Ризван","from":"г. Грозный","village":"Грозный","team":null,"tag":null,"n":29,"start":34680,"finish":54635,"pen":null,"status":"fin"},{"name":"Сулумов Муслим","from":"с. Новые Атаги","village":"Новые Атаги","team":null,"tag":null,"n":9,"start":33480,"finish":53136,"pen":null,"status":"fin"},{"name":"Чупанов Ибрахим","from":"с. Химой","village":"Химой","team":null,"tag":null,"n":37,"start":35160,"finish":53272,"pen":null,"status":"fin"},{"name":"Сулаев Рамзан","from":"с. Химой","village":"Химой","team":null,"tag":null,"n":35,"start":35040,"finish":52780,"pen":null,"status":"fin"},{"name":"Абдулхалимов Магомед","from":"с. Центарой","village":"Центарой","team":null,"tag":null,"n":27,"start":34560,"finish":52268,"pen":null,"status":"fin"},{"name":"Денильханов Ислам","from":"с. Алхан-Юрт","village":"Алхан-Юрт","team":null,"tag":null,"n":32,"start":34800,"finish":51538,"pen":null,"status":"fin"},{"name":"Алиев Ислам","from":"с. Химой","village":"Химой","team":null,"tag":null,"n":34,"start":35400,"finish":51630,"pen":null,"status":"fin"},{"name":"Осмаев БерзДог","from":"с. Аллерой","village":"Аллерой","team":null,"tag":null,"n":42,"start":35400,"finish":51355,"pen":null,"status":"fin"},{"name":"Хамудов Лом-Али","from":"с. Мескеты","village":"Мескеты","team":null,"tag":null,"n":30,"start":34680,"finish":50150,"pen":null,"status":"fin"},{"name":"Мусаев Ахьмад","from":"с. Гойты","village":"Гойты","team":null,"tag":null,"n":46,"start":35640,"finish":49690,"pen":null,"status":"fin"},{"name":"Абдулкаримов Бекхан","from":"с. Гендерген","village":"Гендерген","team":null,"tag":null,"n":8,"start":33360,"finish":47374,"pen":"-30","status":"fin"},{"name":"Эдилов Вислан","from":"г. Грозный","village":"Грозный","team":null,"tag":null,"n":23,"start":34320,"finish":47976,"pen":null,"status":"fin"},{"name":"Амаев Абдурохьман","from":"с. Химой","village":"Химой","team":null,"tag":null,"n":36,"start":35040,"finish":48420,"pen":null,"status":"fin"},{"name":"Ясаев Муслим","from":"г. Гудермес","village":"Гудермес","team":null,"tag":null,"n":12,"start":33600,"finish":46757,"pen":null,"status":"fin"},{"name":"Абубакаров Лоьма","from":"с. Ножай-Юрт","village":"Ножай-Юрт","team":null,"tag":null,"n":24,"start":34320,"finish":46531,"pen":null,"status":"fin"},{"name":"Хусайнов Умар","from":"с. Аллерой","village":"Аллерой","team":null,"tag":null,"n":2,"start":32820,"finish":44620,"pen":null,"status":"fin"},{"name":"Исламов Муса","from":"с. Солнечное","village":"Солнечное","team":null,"tag":null,"n":16,"start":33840,"finish":45613,"pen":null,"status":"fin"},{"name":"Гатаев Мансур","from":"с. Ножай-Юрт","village":"Ножай-Юрт","team":null,"tag":null,"n":15,"start":33840,"finish":45286,"pen":null,"status":"fin"},{"name":"Мухтаров Мансур","from":"с. Марта-Чу","village":"Мартан-Чу","team":null,"tag":null,"n":5,"start":33180,"finish":44524,"pen":null,"status":"fin"},{"name":"Хасаев Лорс","from":"с. Дачу-Барзой","village":"Дачу-Барзой","team":null,"tag":null,"n":14,"start":33720,"finish":45043,"pen":null,"status":"fin"},{"name":"Музиев Амир","from":null,"village":null,"team":"Аух","tag":null,"n":43,"start":35520,"finish":46743,"pen":null,"status":"fin"},{"name":"Каимов Билал","from":"с. Б1ачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":47,"start":35760,"finish":46980,"pen":null,"status":"fin"},{"name":"Мукаев Муса","from":"с. Бачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":17,"start":33960,"finish":44872,"pen":null,"status":"fin"},{"name":"Мухтаров Бексолт","from":"с. Мартан-Чу","village":"Мартан-Чу","team":null,"tag":null,"n":3,"start":33000,"finish":43876,"pen":null,"status":"fin"},{"name":"Ахмадов Заур","from":"г. Шали","village":"Шали","team":null,"tag":null,"n":28,"start":34560,"finish":45390,"pen":null,"status":"fin"},{"name":"Исраилов Джабраил","from":"с. Мартан-Чу","village":"Мартан-Чу","team":null,"tag":null,"n":7,"start":33360,"finish":44131,"pen":null,"status":"fin"},{"name":"Албеков Алихан","from":"с. Аллерой","village":"Аллерой","team":"Chechnya Enduro","tag":null,"n":10,"start":33480,"finish":44240,"pen":null,"status":"fin"},{"name":"Бертиев Турпал-Али","from":"г. Аргун","village":"Аргун","team":null,"tag":null,"n":4,"start":33000,"finish":43631,"pen":null,"status":"fin"},{"name":"Демхаев Абу-Бакар","from":"с. Ведено","village":"Ведено","team":null,"tag":null,"n":31,"start":34800,"finish":45400,"pen":null,"status":"fin"},{"name":"Мусаев Зубайр","from":"г. Ачхой","village":"Ачхой","team":null,"tag":null,"n":33,"start":34920,"finish":45322,"pen":null,"status":"fin"},{"name":"Атабаев Тумсо","from":"г. Ачхой","village":"Ачхой","team":null,"tag":null,"n":22,"start":34200,"finish":44176,"pen":null,"status":"fin"},{"name":"Адамов Зелимхан","from":"с. Аллерой","village":"Аллерой","team":null,"tag":null,"n":1,"start":32820,"finish":42366,"pen":null,"status":"fin"},{"name":"Хадиев Акбулат","from":"с. Беной","village":"Беной","team":null,"tag":null,"n":13,"start":33720,"finish":42910,"pen":null,"status":"fin"},{"name":"Эдилханов Адам","from":"с. Аллерой","village":"Аллерой","team":null,"tag":null,"n":11,"start":33600,"finish":42598,"pen":null,"status":"fin"},{"name":"Басханов Юнус","from":null,"village":null,"team":"Аух","tag":null,"n":44,"start":35520,"finish":44368,"pen":null,"status":"fin"},{"name":"Джанаев Юсуф","from":"Алхан-Калинский","village":"Алхан-Кала","team":null,"tag":null,"n":21,"start":34200,"finish":43031,"pen":null,"status":"fin"},{"name":"Умаров Алман","from":"г. Шали","village":"Шали","team":null,"tag":null,"n":20,"start":34080,"finish":42033,"pen":null,"status":"fin"},{"name":"Агаев Сайд-Эмин","from":"г. Валерик","village":"Валерик","team":null,"tag":null,"n":6,"start":33180,"finish":41060,"pen":null,"status":"fin"},{"name":"Турлаев Ибрагим","from":"с. Аллерой","village":"Аллерой","team":null,"tag":null,"n":41,"start":null,"finish":null,"pen":null,"status":"nostart"},{"name":"Албеков Ильяс","from":"с. Бачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":18,"start":33960,"finish":null,"pen":null,"status":"nofin"},{"name":"Вагапов Хьамзат","from":"с. Гой-Чу","village":"Гой-Чу","team":null,"tag":null,"n":25,"start":34440,"finish":null,"pen":null,"status":"nofin"},{"name":"Магомадов Ибрахим","from":"с. Химой","village":"Химой","team":null,"tag":null,"n":38,"start":35160,"finish":null,"pen":null,"status":"nofin"},{"name":"Шаипов Усман","from":"г. Грозный","village":"Грозный","team":null,"tag":null,"n":45,"start":35640,"finish":null,"pen":null,"status":"nofin"},{"name":"Адамиров Ибрагим","from":"с. Гойты","village":"Гойты","team":null,"tag":null,"n":48,"start":36000,"finish":null,"pen":null,"status":"nofin"}]},{"id":"bronze","name":"Бронза","riders":[{"name":"Цакаев Имран","from":"с. Шаами-Юрт","village":"Шаами-Юрт","team":null,"tag":null,"n":50,"start":35880,"finish":null,"pen":null,"status":"dnf"},{"name":"Мацагов Шамиль","from":"Алахан-Калинский","village":"Алхан-Кала","team":null,"tag":null,"n":68,"start":36420,"finish":null,"pen":null,"status":"dnf"},{"name":"Абзаев Исхак","from":"с. Беной","village":"Беной","team":null,"tag":null,"n":75,"start":36660,"finish":null,"pen":null,"status":"dnf"},{"name":"Алиев Аюб","from":"с. Б1ачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":73,"start":36600,"finish":64630,"pen":"-3.00 ч","status":"fin"},{"name":"Мааев Абу-Бакар","from":"с. Чечен-Аул","village":"Чечен-Аул","team":null,"tag":null,"n":31,"start":34800,"finish":58234,"pen":"-2 ч","status":"fin"},{"name":"Джацаев Халид","from":"г. Урус-Мартан","village":"Урус-Мартан","team":null,"tag":null,"n":49,"start":35880,"finish":56658,"pen":null,"status":"fin"},{"name":"Хизриев Маьхьди","from":"г. Гудермес","village":"Гудермес","team":null,"tag":null,"n":1,"start":32820,"finish":52410,"pen":null,"status":"fin"},{"name":"Душаев Шамхан","from":"с. Закан-Юрт","village":"Закан-Юрт","team":null,"tag":null,"n":9,"start":33000,"finish":52412,"pen":null,"status":"fin"},{"name":"Душаев Рахьим","from":"с. Закан-Юрт","village":"Закан-Юрт","team":null,"tag":null,"n":14,"start":33720,"finish":52720,"pen":null,"status":"fin"},{"name":"Истамулов Исмаил","from":"с. Гелдаган","village":"Гелдаган","team":null,"tag":null,"n":65,"start":36360,"finish":54610,"pen":null,"status":"fin"},{"name":"Сайдалиев Басхан","from":"с. Гелдаган","village":"Гелдаган","team":null,"tag":null,"n":39,"start":35280,"finish":53496,"pen":null,"status":"fin"},{"name":"Ахматов Зелим","from":"г. Ачхой","village":"Ачхой","team":null,"tag":null,"n":29,"start":34680,"finish":52626,"pen":null,"status":"fin"},{"name":"Яхаджиев Ислам","from":"с. Солнечное","village":"Солнечное","team":null,"tag":null,"n":19,"start":34080,"finish":51985,"pen":null,"status":"fin"},{"name":"Сулейманов Микаил","from":"с. Самашки","village":"Самашки","team":null,"tag":null,"n":56,"start":36120,"finish":53922,"pen":null,"status":"fin"},{"name":"Асхабов Ахмед","from":"г. Хасавюрт","village":"Хасавюрт","team":null,"tag":null,"n":22,"start":34200,"finish":51910,"pen":null,"status":"fin"},{"name":"Султаханов Ислам","from":"с. Нурадилово","village":"Нурадилово","team":null,"tag":null,"n":59,"start":36180,"finish":53025,"pen":null,"status":"fin"},{"name":"Исаев Мохьмад","from":null,"village":null,"team":"Аух","tag":null,"n":62,"start":36240,"finish":51830,"pen":null,"status":"fin"},{"name":"Майтукаев Хайруди","from":"с. Закан-Юрт","village":"Закан-Юрт","team":null,"tag":null,"n":5,"start":33180,"finish":48673,"pen":null,"status":"fin"},{"name":"Шимаев Мурат","from":"г. Урус-Мартан","village":"Урус-Мартан","team":null,"tag":null,"n":57,"start":36120,"finish":51250,"pen":null,"status":"fin"},{"name":"Ильясов Аслан","from":"г. Курчалой","village":"Курчалой","team":null,"tag":null,"n":28,"start":34560,"finish":48922,"pen":null,"status":"fin"},{"name":"Даурбеков Мансур","from":"с. Яндаре","village":"Яндаре","team":null,"tag":null,"n":44,"start":35520,"finish":49573,"pen":null,"status":"fin"},{"name":"Кадыров Мансур","from":"с. Шаами-Юрт","village":"Шаами-Юрт","team":null,"tag":null,"n":8,"start":33360,"finish":47378,"pen":null,"status":"fin"},{"name":"Муртазалиев Анзор","from":"с. Закан-Юрт","village":"Закан-Юрт","team":null,"tag":null,"n":43,"start":35520,"finish":49487,"pen":null,"status":"fin"},{"name":"Лепиев Хамид","from":"с. Автуры","village":"Автуры","team":null,"tag":null,"n":58,"start":36180,"finish":49963,"pen":null,"status":"fin"},{"name":"Хаджимурадов Хампаш","from":"г. Шали","village":"Шали","team":null,"tag":null,"n":3,"start":33000,"finish":46745,"pen":null,"status":"fin"},{"name":"Уматхаджиев Амирхан","from":"г. Ачхой","village":"Ачхой","team":null,"tag":null,"n":36,"start":35040,"finish":48772,"pen":null,"status":"fin"},{"name":"Демельханов Хусейн","from":"с. Алхазурова","village":"Алхазурово","team":null,"tag":null,"n":51,"start":36000,"finish":49710,"pen":null,"status":"fin"},{"name":"Тазуркаев Джабраил","from":"с. Катар-Юрт","village":"Катар-Юрт","team":null,"tag":null,"n":6,"start":33180,"finish":46510,"pen":null,"status":"fin"},{"name":"Сапаев Ибрагим","from":"Алахан-Калинский","village":"Алхан-Кала","team":null,"tag":null,"n":67,"start":36420,"finish":49580,"pen":null,"status":"fin"},{"name":"Насуханов Идрис","from":"с. Цоци-Юрт","village":"Цоци-Юрт","team":null,"tag":null,"n":42,"start":35400,"finish":48416,"pen":null,"status":"fin"},{"name":"Яхъяев Валид","from":"с. Цоци-Юрт","village":"Цоци-Юрт","team":null,"tag":null,"n":41,"start":35400,"finish":48186,"pen":null,"status":"fin"},{"name":"Альбигов Адам","from":"с. Ведено","village":"Ведено","team":null,"tag":null,"n":23,"start":34320,"finish":47094,"pen":"-1.30 ч","status":"fin"},{"name":"Асламбеков Бислан","from":"с. Старые Атаги","village":"Старые Атаги","team":null,"tag":null,"n":2,"start":32820,"finish":45450,"pen":null,"status":"fin"},{"name":"Шаипов Адам","from":"с. Дуц-Хутор","village":"Дуц-Хутор","team":null,"tag":null,"n":11,"start":33600,"finish":46058,"pen":null,"status":"fin"},{"name":"Цациев Сурхо","from":"с. Мескеты","village":"Мескеты","team":null,"tag":null,"n":76,"start":36660,"finish":49118,"pen":null,"status":"fin"},{"name":"Гехаев Хасан","from":"с. Новые-Атаги","village":"Новые Атаги","team":null,"tag":null,"n":17,"start":33960,"finish":46178,"pen":null,"status":"fin"},{"name":"Гатаев Билал","from":"г. Урус-Мартан","village":"Урус-Мартан","team":null,"tag":null,"n":21,"start":34200,"finish":45840,"pen":"-1.30 ч","status":"fin"},{"name":"Алиев Абдурахьман","from":"с. Бердыкель","village":"Бердыкель","team":null,"tag":null,"n":10,"start":33480,"finish":44604,"pen":null,"status":"fin"},{"name":"Арсемиков Керим","from":"с. Чечен-Аул","village":"Чечен-Аул","team":null,"tag":null,"n":35,"start":35040,"finish":45756,"pen":null,"status":"fin"},{"name":"Магомедов Шахбан","from":"с. Герга","village":"Герга","team":null,"tag":null,"n":47,"start":35760,"finish":46474,"pen":null,"status":"fin"},{"name":"Эльшиев Магомед-Расул","from":"с. Автуры","village":"Автуры","team":null,"tag":null,"n":33,"start":34920,"finish":45574,"pen":null,"status":"fin"},{"name":"Худаев Казбек","from":"с. Агишты","village":"Агишты","team":null,"tag":null,"n":71,"start":36540,"finish":46651,"pen":null,"status":"fin"},{"name":"Эльмурзаев Апти","from":"с. Мартан-Чу","village":"Мартан-Чу","team":null,"tag":null,"n":7,"start":33360,"finish":43234,"pen":null,"status":"fin"},{"name":"Газалиев Рамзан","from":"г. Курчалой","village":"Курчалой","team":null,"tag":null,"n":27,"start":34560,"finish":44379,"pen":null,"status":"fin"},{"name":"Хатуев Сайфулла","from":"с. Илсхан-Юрт","village":"Илсхан-Юрт","team":"GODJI","tag":null,"n":16,"start":33840,"finish":43047,"pen":null,"status":"fin"},{"name":"Масаев Ибраим","from":"с. Катар-Юрт","village":"Катар-Юрт","team":"RIM Group","tag":null,"n":18,"start":null,"finish":null,"pen":null,"status":"nostart"},{"name":"Межидов Умалт","from":"с. Автуры","village":"Автуры","team":null,"tag":null,"n":32,"start":null,"finish":null,"pen":null,"status":"nostart"},{"name":"Дугаров Умар","from":"с. Толстой-Юрт","village":"Толстой-Юрт","team":null,"tag":null,"n":34,"start":null,"finish":null,"pen":null,"status":"nostart"},{"name":"Лепиев Халид","from":"с. Автуры","village":"Автуры","team":null,"tag":null,"n":54,"start":null,"finish":null,"pen":null,"status":"nostart"},{"name":"Саламов Ахъяд","from":null,"village":null,"team":null,"tag":null,"n":61,"start":null,"finish":null,"pen":null,"status":"nostart"},{"name":"Душаев Ризван","from":"с. Закан-Юрт","village":"Закан-Юрт","team":null,"tag":null,"n":4,"start":33000,"finish":null,"pen":null,"status":"nofin"},{"name":"Сулейманов Байсангур","from":"с. Мартан-Чу","village":"Мартан-Чу","team":null,"tag":null,"n":12,"start":33600,"finish":null,"pen":null,"status":"nofin"},{"name":"Исраилов Мохьмад Эмин","from":"с. Мартан-Чу","village":"Мартан-Чу","team":null,"tag":null,"n":13,"start":33720,"finish":null,"pen":null,"status":"nofin"},{"name":"Ахмадов Ахьмад","from":"с. Янди","village":"Янди","team":null,"tag":null,"n":15,"start":33840,"finish":null,"pen":null,"status":"nofin"},{"name":"Эдельханов Билу","from":"г. Урус-Мартан","village":"Урус-Мартан","team":null,"tag":null,"n":20,"start":34080,"finish":59430,"pen":null,"status":"fin"},{"name":"Сатуев Сурхо","from":"г. Урус-Мартан","village":"Урус-Мартан","team":null,"tag":null,"n":24,"start":34320,"finish":null,"pen":null,"status":"nofin"},{"name":"Честиев Магомед","from":"с. Ахмат-Юрт","village":"Ахмат-Юрт","team":null,"tag":null,"n":25,"start":34440,"finish":null,"pen":null,"status":"nofin"},{"name":"Газалиев Иса","from":"г. Курчалой","village":"Курчалой","team":null,"tag":null,"n":26,"start":34440,"finish":null,"pen":null,"status":"nofin"},{"name":"Махмудов Анзор","from":"с. Гелдаган","village":"Гелдаган","team":null,"tag":null,"n":30,"start":34680,"finish":null,"pen":null,"status":"nofin"},{"name":"Тимурсултанов Раман","from":"с. Бачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":37,"start":35160,"finish":null,"pen":null,"status":"nofin"},{"name":"Магомадов Адам","from":"с. Бачи-Юрт","village":"Бачи-Юрт","team":null,"tag":null,"n":38,"start":35160,"finish":null,"pen":null,"status":"nofin"},{"name":"Автаев Леид","from":"с. Червленная","village":"Червленная","team":null,"tag":null,"n":40,"start":35280,"finish":null,"pen":null,"status":"nofin"},{"name":"Курбанов Умалт","from":"Катаяма","village":"Катаяма","team":null,"tag":null,"n":45,"start":35640,"finish":null,"pen":null,"status":"nofin"},{"name":"Цуроев Адам","from":"с. Яндаре","village":"Яндаре","team":null,"tag":null,"n":46,"start":35640,"finish":null,"pen":null,"status":"nofin"},{"name":"Шихшабеков Мухаммад","from":"с. Герга","village":"Герга","team":null,"tag":null,"n":48,"start":35760,"finish":null,"pen":null,"status":"nofin"},{"name":"Исаев Али","from":"с. Алхазурово","village":"Алхазурово","team":null,"tag":null,"n":52,"start":36000,"finish":null,"pen":null,"status":"nofin"},{"name":"Саламов Ахъяд","from":"с. Алхазурово","village":"Алхазурово","team":null,"tag":null,"n":53,"start":36060,"finish":null,"pen":null,"status":"nofin"},{"name":"Данаев Лоьми","from":"с. Беной","village":"Беной","team":null,"tag":null,"n":55,"start":36060,"finish":null,"pen":null,"status":"nofin"},{"name":"Дудаев Алихаджи","from":"с. Гелдаган","village":"Гелдаган","team":null,"tag":null,"n":64,"start":36240,"finish":null,"pen":null,"status":"nofin"},{"name":"Алхаев Мансур","from":"г. Урус-Мартан","village":"Урус-Мартан","team":null,"tag":null,"n":60,"start":36300,"finish":null,"pen":null,"status":"nofin"},{"name":"Ибраим","from":null,"village":null,"team":null,"tag":"Роко","n":63,"start":36300,"finish":null,"pen":null,"status":"nofin"},{"name":"Макаев Юсуп","from":"с. Алхазурово","village":"Алхазурово","team":null,"tag":null,"n":66,"start":36360,"finish":null,"pen":null,"status":"nofin"},{"name":"Сатаев Рамзан","from":"с. Дарбанхи","village":"Дарбанхи","team":null,"tag":"На Смерть","n":69,"start":36480,"finish":null,"pen":null,"status":"nofin"},{"name":"Нахаев Нариман","from":"с. Дарбанхи","village":"Дарбанхи","team":null,"tag":"На Смерть","n":70,"start":36480,"finish":null,"pen":null,"status":"nofin"},{"name":"Муртазалиев Магомед-Шарип","from":"с. Закан-Юрт","village":"Закан-Юрт","team":null,"tag":null,"n":72,"start":36540,"finish":null,"pen":null,"status":"nofin"},{"name":"Мамацуев Абдуллахь","from":"с. Рошни Чу","village":"Рошни-Чу","team":null,"tag":null,"n":74,"start":36600,"finish":null,"pen":null,"status":"nofin"},{"name":"Сайдахмадов Сайхан","from":"г. Грозный","village":"Грозный","team":null,"tag":null,"n":88,"start":36720,"finish":null,"pen":null,"status":"nofin"}]}]}/*КОНЕЦ*/;
+
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const pad = (n) => String(n).padStart(2, "0");
+  const clock = (s) => { const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60; return x ? `${h}:${pad(m)}:${pad(x)}` : `${h}:${pad(m)}`; };
+  const dur = (s) => `${Math.floor(s / 3600)}:${pad(Math.floor((s % 3600) / 60))}:${pad(s % 60)}`;
+  const plural = (n, one, few, many) => { const a = n % 10, b = n % 100; return a === 1 && b !== 11 ? one : a >= 2 && a <= 4 && (b < 12 || b > 14) ? few : many; };
+  const norm = (s) => String(s ?? "").toLowerCase().replace(/ё/g, "е").replace(/[1ӏьъ'"«»\-\s.]/g, "");
+
+  const STATUS = {
+    dnf: { title: "Сход", text: "Гонщик сошёл с трассы.", short: "Сход" },
+    nofin: { title: "Нет отметки финиша", text: "В таблице есть время старта, но нет времени финиша.", short: "Нет финиша" },
+    nostart: { title: "Нет отметки старта", text: "В таблице нет времени старта.", short: "Нет старта" },
+  };
+
+  // Места: по чистому времени, при равном времени одно место.
+  for (const c of DATA.classes) {
+    c.fin = c.riders.filter((r) => r.status === "fin").map((r) => ((r.time = r.finish - r.start), r)).sort((a, b) => a.time - b.time || a.n - b.n);
+    c.fin.forEach((r, i) => { r.place = i && r.time === c.fin[i - 1].time ? c.fin[i - 1].place : i + 1; r.gap = r.time - c.fin[0].time; });
+    c.named = c.riders.filter((r) => r.name).length;
+    c.riders.forEach((r) => { r.cls = c; r.hay = norm([r.name, r.from, r.village, r.team, r.tag].join(" ")); });
+  }
+  const all = DATA.classes.flatMap((c) => c.riders);
+  const named = all.filter((r) => r.name);
+
+  // Цифры в шапке
+  const villages = new Map();
+  named.forEach((r) => r.village && villages.set(r.village, (villages.get(r.village) || 0) + 1));
+  $("#f-total").textContent = named.length;
+  $("#f-fin").textContent = all.filter((r) => r.status === "fin").length;
+  $("#f-cls").textContent = DATA.classes.length;
+  $("#f-places").textContent = villages.size;
+  const pens = all.filter((r) => r.pen).length;
+  if (pens) $("#pen-note").textContent = `Штраф в таблице стоит у ${pens} ${plural(pens, "гонщика", "гонщиков", "гонщиков")}. В время он пока не добавлен.`;
+  if (DATA.updated) $("#upd").textContent = new Date(DATA.updated + "T12:00:00").toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
+
+  // Строки протокола
+  const plate = (r) => `<span class="plate p-${r.cls.id}" title="Стартовый номер">${esc(r.n)}</span>`;
+  const who = (r) => `<div class="r-who"><b>${esc(r.name || "Имя не указано")}</b>`
+    + (r.from ? `<span class="r-from">${esc(r.from)}</span>` : "")
+    + (r.team ? `<span class="tag">Команда ${esc(r.team)}</span>` : "")
+    + (r.tag ? `<span class="tag">«${esc(r.tag)}»</span>` : "")
+    + (r.pen ? `<span class="tag tag-warn">Штраф в таблице: ${esc(r.pen)}</span>` : "")
+    + `</div>`;
+  const clockLine = (line) => `<span class="r-clock">${line}</span>`;
+  const finRow = (r, withCls) => `<li class="row"><span class="r-place m${Math.min(r.place, 4)}">${r.place}</span>${plate(r)}${who(r)}`
+    + `<div class="r-time"><b>${dur(r.time)}</b><span class="r-gap">${r.gap ? "+" + dur(r.gap) : "лучшее время"}</span></div>`
+    + clockLine(`старт ${clock(r.start)} · финиш ${clock(r.finish)}${withCls ? ` · ${r.cls.name}` : ""}`) + `</li>`;
+  const outRow = (r, withCls) => `<li class="row"><span class="r-place" aria-hidden="true"></span>${plate(r)}${who(r)}`
+    + `<div class="r-time"><span class="r-status">${STATUS[r.status].short}</span></div>`
+    + clockLine(`${r.start != null ? "старт " + clock(r.start) : "старт не отмечен"}${withCls ? ` · ${r.cls.name}` : ""}`) + `</li>`;
+  const row = (r, withCls) => (r.status === "fin" ? finRow(r, withCls) : outRow(r, withCls));
+
+  // Классы
+  const tabs = $("#classes");
+  tabs.innerHTML = DATA.classes.map((c) => `<button type="button" role="tab" class="cls p-${c.id}" data-cls="${c.id}" aria-controls="view" aria-selected="false">`
+    + `<span class="cls-name">${esc(c.name)}</span><span class="cls-count">${c.fin.length} из ${c.named} на финише</span></button>`).join("");
+
+  function show(id) {
+    const c = DATA.classes.find((x) => x.id === id) || DATA.classes[0];
+    tabs.querySelectorAll(".cls").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.cls === c.id)));
+    $("#podium").innerHTML = c.fin.slice(0, 3).map((r, i) => `<div class="pod pod-${i + 1}"><div class="pod-who">${plate(r)}<b>${esc(r.name)}</b>`
+      + (r.from ? `<small>${esc(r.from)}</small>` : "") + `<span class="pod-time">${dur(r.time)}</span></div><div class="pod-step">${r.place}</div></div>`).join("");
+    $("#proto-title").textContent = `Протокол: ${c.name}`;
+    $("#proto").innerHTML = c.fin.map((r) => row(r, false)).join("");
+    $("#others").innerHTML = ["dnf", "nofin", "nostart"].map((st) => {
+      const rs = c.riders.filter((r) => r.status === st);
+      return rs.length ? `<details class="grp"><summary><span>${STATUS[st].title}</span><span class="grp-n">${rs.length}</span></summary>`
+        + `<p class="grp-note">${STATUS[st].text}</p><ol class="proto">${rs.map((r) => row(r, false)).join("")}</ol></details>` : "";
+    }).join("");
+  }
+  tabs.addEventListener("click", (e) => { const b = e.target.closest(".cls"); if (b) show(b.dataset.cls); });
+  tabs.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    const bs = [...tabs.querySelectorAll(".cls")], i = bs.indexOf(document.activeElement);
+    if (i < 0) return;
+    const next = bs[(i + (e.key === "ArrowRight" ? 1 : bs.length - 1)) % bs.length];
+    next.focus(); show(next.dataset.cls);
+  });
+
+  // Поиск по всем классам
+  const q = $("#q");
+  function search() {
+    const words = q.value.trim().split(/\s+/).filter(Boolean);
+    const on = words.length > 0;
+    $("#view").hidden = on; tabs.hidden = on; $("#found").hidden = !on;
+    if (!on) return;
+    const hits = all.filter((r) => words.every((w) => (/^\d+$/.test(w) ? r.n === Number(w) : r.hay.includes(norm(w)))));
+    hits.sort((a, b) => DATA.classes.indexOf(a.cls) - DATA.classes.indexOf(b.cls) || (a.place ?? 1e9) - (b.place ?? 1e9) || a.n - b.n);
+    $("#found-n").textContent = hits.length ? `Найдено: ${hits.length}` : "Никого не нашли. Проверь фамилию, село или номер.";
+    $("#found-list").innerHTML = hits.map((r) => row(r, true)).join("");
+  }
+  q.addEventListener("input", search);
+  $("#found-reset").addEventListener("click", () => { q.value = ""; search(); q.focus(); });
+
+  // Откуда
+  const geo = [...villages].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ru"));
+  const top = geo.filter(([, n]) => n >= 3), rest = geo.filter(([, n]) => n < 3);
+  const max = geo.length ? geo[0][1] : 1;
+  $("#geo-lede").textContent = `Сёл и городов в списках: ${geo.length}. Полоса показывает, сколько гонщиков приехало из села.`;
+  $("#geo-bars").innerHTML = top.map(([p, n]) => `<div class="geo-row"><span class="geo-name" title="${esc(p)}">${esc(p)}</span><span class="geo-track"><span class="geo-bar" data-w="${(n / max) * 100}"></span></span><span class="geo-n">${n}</span></div>`).join("");
+  document.querySelectorAll(".geo-bar").forEach((el) => { el.style.width = el.dataset.w + "%"; });
+  $("#geo-rest").innerHTML = rest.map(([p, n]) => `<span class="chip">${esc(p)}${n > 1 ? ` <b>${n}</b>` : ""}</span>`).join("");
+
+  // Команды
+  const teams = new Map();
+  named.forEach((r) => { if (r.team) { if (!teams.has(r.team)) teams.set(r.team, []); teams.get(r.team).push(r); } });
+  $("#teams").innerHTML = [...teams].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0])).map(([t, rs]) => `<div class="team"><h3>${esc(t)}</h3><ul>`
+    + rs.map((r) => `<li>${plate(r)}<div class="tm"><span>${esc(r.name)}</span><small>${esc(r.cls.name)}${r.place ? `, ${r.place} место` : `, ${STATUS[r.status].short.toLowerCase()}`}</small></div></li>`).join("")
+    + `</ul></div>`).join("");
+
+  show(DATA.classes[0] && DATA.classes[0].id);
+})();
+</script>
+</body>
+</html>
